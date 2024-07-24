@@ -17,7 +17,7 @@ const AddComment = ({postId}) => {
       body: JSON.stringify({name, email, comment, postId}),
     })
     if (!res.ok) {
-      console.log('Failed to add comment')
+      console.log('Failed to add comment -----------', res)
       return
     }
 

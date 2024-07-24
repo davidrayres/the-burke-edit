@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import React from 'react'
-import {Lilita_One, VT323, Poppins} from 'next/font/google'
+import {VT323, Poppins} from 'next/font/google'
 // import {Post} from '../utils/interface'
 
 const font = Poppins({weight: '400', subsets: ['latin']})
 const dateFont = VT323({weight: '400', subsets: ['latin']})
 
 const PostComponent = ({post}) => {
+console.log('POST----------------',post)
   return (
     <div className={cardStyle}>
       <Link href={`/posts/${post?.slug?.current}`}>
@@ -14,8 +14,6 @@ const PostComponent = ({post}) => {
         <p className={`${dateFont.className} my-2 text-pink-500`}>{new Date(post?.publishedAt).toDateString()}</p>
         <p className='dark:text-gray-400 mb-4 line-clamp-2'>{post?.excerpt}</p>
       </Link>
-
-      {/* TAGS */}
 
       <div>
         {post?.tags?.map(tag => (

@@ -1,7 +1,6 @@
 import Header from '@/app/components/Header'
 import {client} from '@/sanity/lib/client'
 import Link from 'next/link'
-import React from 'react'
 
 async function getAllTags() {
   const query = `

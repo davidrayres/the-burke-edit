@@ -26,7 +26,7 @@ export const MoonIcon = () => {
 
 export const BackArrowIcon = () => {
   return (
-    <svg fill='#a955f7' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' viewBox='0 0 45.58 45.58'>
+    <svg fill='#ec4899' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' viewBox='0 0 45.58 45.58'>
       <g id='SVGRepo_bgCarrier' strokeWidth='0' />
 
       <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round' />

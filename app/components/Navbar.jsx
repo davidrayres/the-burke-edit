@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 import ThemeSwitch from './ThemeSwitch'
 import {Lilita_One} from 'next/font/google'
 // import {AdminIcon} from './Icons'

@@ -1,6 +1,5 @@
 import Header from '@/app/components/Header'
 import Link from 'next/link'
-import React from 'react'
 
 const NotFound = () => {
   return (

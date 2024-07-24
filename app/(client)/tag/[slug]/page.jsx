@@ -1,7 +1,6 @@
 import Header from '@/app/components/Header'
 import PostComponent from '@/app/components/PostComponent'
 import {client} from '@/sanity/lib/client'
-import React from 'react'
 
 async function getPostsByTag(tag) {
   const query = `
@@ -33,7 +32,7 @@ export async function generateMetadata({params}) {
       description: `Posts with the tag ${params.slug}`,
       type: 'website',
       locale: 'en_US',
-      url: `https://theburkeedit.vercel.app/${params.slug}`,
+      url: `https://the-burke-edit.vercel.app/${params.slug}`,
       siteName: 'DevBlook',
     },
   }

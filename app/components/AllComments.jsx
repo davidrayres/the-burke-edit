@@ -1,5 +1,3 @@
-import React from 'react'
-// import {Comment} from '@/utils/interface'
 import Link from 'next/link'
 
 const AllComments = ({comments, slug, commentsOrder}) => {

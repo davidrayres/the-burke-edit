@@ -7,7 +7,7 @@ import {Provider} from '@/utils/Provider'
 const firaCode = Fira_Code({subsets: ['latin']})
 
 export const metadata = {
-  metadataBase: new URL('https://theburkeedit.vercel.app/'),
+  metadataBase: new URL('https://the-burke-edit.vercel.app/'),
   title: {
     default: 'The Burke Edit',
     template: '%s | The Burke Edit',
@@ -18,7 +18,7 @@ export const metadata = {
     description: 'Everything Burkley Ayres!',
     type: 'website',
     locale: 'en_US',
-    url: 'https://theburkeedit.vercel.app/',
+    url: 'https://the-burke-edit.vercel.app/',
     siteName: 'The Burke Edit',
   },
 }

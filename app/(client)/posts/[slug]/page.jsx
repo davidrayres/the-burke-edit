@@ -3,16 +3,13 @@ import AllComments from '@/app/components/AllComments'
 import Header from '@/app/components/Header'
 import Toc from '@/app/components/Toc'
 import {slugify} from '@/utils/helpers'
-// import {Post} from '@/utils/interface'
 import {client} from '@/sanity/lib/client'
 import {urlFor} from '@/sanity/lib/image'
 import {PortableText} from '@portabletext/react'
-// import {Metadata} from 'next'
 import {VT323} from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
-import React from 'react'
 
 const dateFont = VT323({weight: '400', subsets: ['latin']})
 
@@ -59,7 +56,7 @@ export async function generateMetadata({params}) {
       description: post.excerpt,
       type: 'article',
       locale: 'en_US',
-      url: `https://theburkeedit.vercel.app/${params.slug}`,
+      url: `https://the-burke-edit.vercel.app/${params.slug}`,
       siteName: 'DevBlook',
       images: [
         // {
@@ -110,7 +107,7 @@ export default page
 
 const myPortableTextComponents = {
   types: {
-    image: ({value}) => <Image src={urlFor(value).url()} alt='Post' width={700} height={700} />,
+    image: ({value}) => <Image src={urlFor(value).url()} alt='Post' width={700} height={700} className='mb-8' />,
   },
   block: {
     h2: ({value}) => (
